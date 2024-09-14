@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Military Operation Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="C:\Users\pc\Desktop\MY PROJECT\images\airborne.png" alt="Military Logo">
+        </div>
+        <h1>Military Operations Dashboard</h1>
+        <div class="mission-status">
+            <p>Mission Status: <strong>Active</strong></p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#overview">Operations Overview:</a></li>
+            <li><a href="#troop-deployment">Troop Deployment</a></li>
+            <li><a href="#resource-allocation">Resource Allocation</a></li>
+            <li><a href="#mission-details">Mission Details</a></li>
+            <li><a href="#troop-roster">Troop Roster</a></li>
+            <li><a href="#resource-inventory">Resource Inventory</a></li>
+            <li><a href="#mission-logs">Mission Logs</a></li>
+            <li><a href="#reports">Reports</a></li>
+            <li><a href="#military-images">Military Images</a></li>
+        </ul>
+    </nav>
+
+    <!-- Troop Deployment Form -->
+    <h2 id="troop-deployment">Troop Deployment</h2>
+    <form id="troop-deployment-form">
+        <label for="unit">Unit Name</label>
+        <select id="unit" name="unit">
+            <option value="Alpha">Alpha</option>
+            <option value="Bravo">Bravo</option>
+            <option value="Charlie">Charlie</option>
+        </select>
+
+        <label for="deployment-location">Deployment Location</label>
+        <input type="text" id="deployment-location" name="deployment-location" required>
+
+        <label for="deployment-date">Deployment Date</label>
+        <input type="date" id="deployment-date" name="deployment-date" required>
+
+        <label for="deployment-details">Details</label>
+        <textarea id="deployment-details" name="deployment-details" rows="4"></textarea>
+
+        <button type="submit">Deploy Troops</button>
+    </form>
+
+    <!-- Resource Allocation Form -->
+    <h2 id="resource-allocation">Resource Allocation</h2>
+    <form id="resource-allocation-form">
+        <label for="resource-type">Resource Type</label>
+        <select id="resource-type" name="resource-type" required>
+            <option value="Ammunition">Ammunition</option>
+            <option value="Food">Food</option>
+            <option value="Medical">Medical</option>
+            <option value="Fuel">Fuel</option>
+        </select>
+
+        <label for="resource-quantity">Quantity</label>
+        <input type="number" id="resource-quantity" name="resource-quantity" required>
+
+        <label for="delivery-date">Delivery Date</label>
+        <input type="date" id="delivery-date" name="delivery-date" required>
+
+        <button type="submit">Allocate Resources</button>
+    </form>
+
+    <!-- Mission Details Form -->
+    <h2 id="mission-details">Mission Details</h2>
+    <form id="mission-details-form">
+        <label for="mission-name">Mission Name</label>
+        <input type="text" id="mission-name" name="mission-name" required>
+
+        <label for="mission-objective">Objective</label>
+        <textarea id="mission-objective" name="mission-objective" rows="4"></textarea>
+
+        <label for="mission-date">Mission Date</label>
+        <input type="date" id="mission-date" name="mission-date" required>
+
+        <button type="submit">Submit Mission Details</button>
+    </form>
+
+    <!-- Troop Roster Table -->
+    <h2>Troop Roster</h2>
+    <table aria-labelledby="troop-roster">
+        <thead>
+            <tr>
+                <th>Unit Name</th>
+                <th>Commander</th>
+                <th>Deployment Location</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alpha Company</td>
+                <td>Captain John Cole</td>
+                <td>Sector 1</td>
+                <td>Deployed</td>
+            </tr>
+            <tr>
+                <td>Bravo Company</td>
+                <td>Captain Don Self</td>
+                <td>Sector 2</td>
+                <td>On Standby</td>
+            </tr>
+            <tr>
+                <td>Charlie Company</td>
+                <td>Captain James Reece</td>
+                <td>Sector 3</td>
+                <td>Standby</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Resource Inventory Table -->
+    <h2>Resource Inventory</h2>
+    <table aria-labelledby="resource-inventory">
+        <thead>
+            <tr>
+                <th>Resource Type</th>
+                <th>Quantity Available</th>
+                <th>Location</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ammunition</td>
+                <td>5000 rounds</td>
+                <td>Warehouse A</td>
+                <td>Ready</td>
+            </tr>
+            <tr>
+                <td>Food</td>
+                <td>2000 packs</td>
+                <td>Warehouse B</td>
+                <td>Insufficient</td>
+            </tr>
+            <tr>
+                <td>Medical Supplies</td>
+                <td>200 kits</td>
+                <td>Warehouse C</td>
+                <td>Low Stock</td>
+            </tr>
+            <tr>
+                <td>Fuel</td>
+                <td>1000 Gallons</td>
+                <td>Warehouse D</td>
+                <td>Sufficient</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Mission Logs List -->
+    <h2>Mission Logs</h2>
+    <ul aria-labelledby="mission-logs">
+        <li><strong>Operation Alpha</strong> - Completed on 2024-09-05. Objective: Secure Area 1.</li>
+        <li><strong>Operation Bravo</strong> - In Progress. Objective: Recon Sector 2.</li>
+        <li><strong>Operation Charlie</strong> - Planned for 2024-09-15. Objective: Rescue Hostages.</li>
+    </ul>
+
+    <!-- Reports -->
+    <h2>Reports</h2>
+    <table aria-labelledby="Reports">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Report</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2024-09-10</td>
+                <td>Successful mission with minimal casualties.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Military Images -->
+    <h2>Military Magazine</h2>
+    <ul>
+        <li>MILITARY JETS</li>
+        <div class="slider">
+            <div class="slide-track">
+                <img src="C:\Users\pc\Desktop\MY PROJECT\images\armedforces.jpg" alt="">
+                <img src="C:\Users\pc\Desktop\MY PROJECT\images\transport33.png" alt="">
+                <img src="C:\Users\pc\Desktop\MY PROJECT\images\jet63.jpg" alt="">
+                <img src="C:\Users\pc\Desktop\MY PROJECT\images\aircraft63.jpg" alt="">
+                <img src="C:\Users\pc\Desktop\MY PROJECT\images\fighterjets.jpg" alt="">
+                <img src="C:\Users\pc\Desktop\MY PROJECT\images\sunrise.jpg" alt="">
+                <img src="C:\Users\pc\Desktop\MY PROJECT\images\aircraft.jpg" alt="">
+                <img src="C:\Users\pc\Desktop\MY PROJECT\images\helcopter.jpg" alt="">
+
+                
+            </div>
+        </div>
+
+        <li>MILITARY DOGS</li>
+        <div class="slider">
+            <div class="slide-track">
+                <img src="C:\Users\pc\Desktop\MY PROJECT\images\dog4.jpg" alt="">
+                <img src="C:\Users\pc\Desktop\MY PROJECT\images\dog1.jpg" alt="">
+                <img src="C:\Users\pc\Desktop\MY PROJECT\images\dog2.jpg" alt="">
+
+            </div>
+        </div>
+
+        <li>SYMBOLS OF MILITARY LOYALTY</li>
+        <div class="slider">
+            <div class="slide-track">
+                <img src="C:\Users\pc\Desktop\MY PROJECT\images\veretan.jpg" alt="">
+                <img src="C:\Users\pc\Desktop\MY PROJECT\images\flag.jpg" alt="">
+                <img src="C:\Users\pc\Desktop\MY PROJECT\images\soldier70.jpg" alt="">
+                <img src="C:\Users\pc\Desktop\MY PROJECT\images\specialforce127.jpg" alt="">
+            </div>
+        </div>
+        <h3>MILITARY SOLDIERS</h3>
+            <li>CAPTAIN JOHN COLE</li>
+            <div class="slider">
+                <div class="slide-track">
+                    <img src="C:\Users\pc\Desktop\MY PROJECT\images\officer1.jpg" alt="">
+                     
+                </div>
+
+            </div>
+            <li>CAPTAIN DON SELF</li>
+            <div class="slider">
+                <div class="slide-track">
+                    <img src="C:\Users\pc\Desktop\MY PROJECT\images\don.jpg" alt="">
+
+                </div>
+
+            </div>
+            <li>CAPTAIN REECE JAMES</li>
+            <div class="slider">
+                <div class="slide-track">
+                    <img src="C:\Users\pc\Desktop\MY PROJECT\images\reece.jpg.jpg" alt="">
+
+                </div>
+
+            </div>
+            <li>ALPHA TEAM</li>
+            <div class="slider">
+                <div class="slide-track">
+                    <img src="C:\Users\pc\Desktop\MY PROJECT\images\police1.jpg" alt="">
+
+                </div>
+                 
+            </div>
+            <li>BRAVO TEAM</li>
+            <div class="slider">
+                <div class="slide-track">
+                    <img src="C:\Users\pc\Desktop\MY PROJECT\images\demonstration.jpg" alt="">
+
+                </div>
+
+            </div>
+            <li>CHARLIE TEAM</li>
+            <div class="slider">
+                <div class="slide-track">
+                    <img src="C:\Users\pc\Desktop\MY PROJECT\images\police2.jpg" alt="">
+
+                </div>
+
+            </div>
+
+
+         </div>
+
+        
+    </ul>
+
+    <footer>
+        <p>&copy; 2024 Military Operations. All rights reserved.</p>
+        <p>Contact: <a href="mailto:military@airbornerangers.com">military@airbornerangers.com</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

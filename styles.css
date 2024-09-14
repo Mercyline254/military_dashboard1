@@ -1,0 +1,291 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2E2E2E;
+    color: #FFFFFF;
+}/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header .mission-status {
+    font-size: 1.2em;
+}
+section {
+    margin-bottom: 40px;
+}
+
+
+
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #D4AF37; /* Military Gold */
+    text-transform: uppercase;
+    margin-bottom:0;
+    text-align: center;
+}
+
+p, label {
+    color: #FFFFFF;
+}
+
+ form button {
+    background-color: #D4AF37;
+    color: #2E2E2E;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: backgrounda-color 0.3s ease;
+}
+
+ form button:hover {
+    background-color: #B8860B;
+}
+
+form button:hover {
+    background-color: #B8860B;
+}
+
+
+input:focus, select:focus, textarea:focus {
+    outline:auto;
+    border-color: #D4AF37;
+    background-color: #505050;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #555555;
+    background-color: #3C3C3C;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40;
+    background-color: #3C3C3C;
+}table, th, td {
+    border: 1px solid #ccc;
+}
+
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #555555;
+    position: relative;
+
+}
+
+th {
+    background-color: #444444;
+    color: #D4AF37;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+tr:hover {
+    background-color: #505050;
+}
+
+ul {
+    background: #3C3C3C;
+    padding: 20px;
+    border-radius: 8px;
+    list-style: none;
+    margin: 0;
+}
+nav ul li {
+    display:inline;
+    margin-right: 15px;
+    font-size:small;
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* Footer */
+footer {
+    color:#D4AF37;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    color: #D4AF37;
+    margin: 5px 0;
+    font-size: x-large;
+}
+
+footer a {
+    color: #D4AF37;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+div ,li :-moz-ui-invalid{
+    font-size: xx-large;
+}
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .header-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    body {
+        padding: 10px;
+    }
+
+    table, ul {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input, select, textarea {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    table, ul {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    input, select, textarea, button {
+        font-size: 12px;
+    }
+}
+
+
+
+form {
+    background-color: #2E2E2E;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow:#333;
+    margin-bottom: 20px;
+    
+}
+
+
+
+button:hover:after {
+    transform: translate(-50%, -50%) scale(1);
+}
+ 
+
+.slider {
+    width: 100%; /*adjust the slider width based on screen size*/
+    overflow:scroll;
+    border: 1px solid #ddd;
+    position: relative;
+}
+.slide-track {
+    display: flex;
+    width: calc(100% * 4); /* adjust width based on the number of images */
+    animation: slide  ease;
+} 
+.slide-track img{
+    width: 100px;/* ensures images take up the full width of the slider */
+    flex-shrink: 0;
+    height: auto;
+}
+/* sliding animation */
+@keyframes slide {
+    0% { transform: translateX(0);}
+    100% { transform: translateX(-100%);}
+}
+/* media query for smaller screens */
+@media (max-width: 768px){
+    .slider{
+        width: 100%; /* use full width of the screen for smaller devices*/
+    }
+    }
+.slide-track {
+    width: calc(100% * 4);
+    }
+.slide-track img{
+    width: 10%;
+}
+#img {
+    width: 50px; /* set desired witdh*/
+    height: 50px;/* set desired height*/
+}
+li military images{
+    font-size: xx-large;
+    background-color: #D4AF37;
+}
+li{
+    margin-top: 20px;
+    font-size: large;
+    font-style:var(#555555);
+    font-weight:bold;
+
+}
+
